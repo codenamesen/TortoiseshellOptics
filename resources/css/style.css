@@ -111,26 +111,27 @@ body{
 }
 
 
-.topmiddle{
-  max-width: 960px;
+.midsection{
+  max-width: 1045px;
   margin: 0rem auto 3rem auto;
   padding: 0px;
-  border: 2px solid red;
+  line-height: 1.5;
+  /*border: 2px solid red;*/
 }
 
-.topmiddle{
+.midsection{
   display: flex;
   justify-content: center;
 }
 
-.topmiddle .icon{
+.midsection .icon{
   height: 8rem;
   width: 5rem;
   margin: 0rem 3rem 0rem 3rem;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
-.topmiddle .icon{
+.midsection .icon{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -138,12 +139,34 @@ body{
   text-align: center;
 }
 
-.topmiddle .left img{
+.midsection .left img{
   width: 3.5rem;
   height: auto;
 }
 
-.topmiddle .middle img, .topmiddle .right img{
+.midsection .middle img, .midsection .right img{
   width: 88px;
   height: auto;
+}
+
+.midsection .column{
+  max-width: 35%;
+  margin: 0% 2.5% 0% 2.5%;
+  /*border: 1px solid green;*/
+}
+
+.midsection .column .heading{
+  background-color: cadetblue;
+}
+
+.midsection .column .heading{
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.midsection .column .heading{
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
 }
