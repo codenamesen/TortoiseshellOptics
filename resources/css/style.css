@@ -143,12 +143,7 @@ body{
   height: auto;
 }
 
-.topmiddle .middle img{
-  width: 88px;
-  height: auto;
-}
-
-.topmiddle .right img{
+.topmiddle .middle img, .topmiddle .right img{
   width: 88px;
   height: auto;
 }
