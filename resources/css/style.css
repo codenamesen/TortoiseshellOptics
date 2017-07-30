@@ -162,11 +162,35 @@ body{
 .midsection .column .heading{
   margin: 0rem 0rem 1rem 0rem;
   padding: 0.5rem 1.25rem;
-  width: 10rem;
+  max-width: 10rem;
 }
 
 .midsection .column .heading{
   font-size: 1rem;
   font-weight: bold;
   color: white;
+}
+
+footer{
+  background-color: azure;
+}
+
+
+footer{
+  margin: 5rem auto 0 auto;
+  padding: 4rem;
+  max-width: 816px;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+footer img{
+  height: 1.5rem;
+  width: auto;
+  margin: 0rem 1rem 0rem 0rem;
 }
