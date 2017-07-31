@@ -351,6 +351,11 @@ footer img{
     margin: 0rem 0rem 3rem 0rem;
   }
 
+/*To keep the background image at top in focus*/
+  .top{
+    background-position: left;
+  }
+
   .navbar{
     max-width: 100%;
     margin: 0rem 0rem 9rem 0rem;
