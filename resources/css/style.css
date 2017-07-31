@@ -88,7 +88,7 @@ body{
 }
 
 .top .blank p{
-  display: inline-block;
+  /*display: inline-block;*/
   position: absolute;
   top: 10rem;
   right: -2rem;
@@ -193,4 +193,297 @@ footer img{
   height: 1.5rem;
   width: auto;
   margin: 0rem 1rem 0rem 0rem;
+}
+
+@media only screen and (min-width: 666px){
+  .top .menu .mobile{
+    display: none;
+  }
+
+  footer .mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1053px){
+  .top{
+    height: 22rem;
+    padding: 0;
+    margin: 0rem 0rem 3rem 0rem;
+    /*border: 2px solid blue;*/
+    /*display: flex;*/
+  }
+
+  .top{
+    background-image: url(../images/glasses-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .navbar{
+    max-width: 100%;                                /*960px-4rem*/
+    margin: 0;
+    padding: 1rem 2rem;
+    /*opacity: 0.1;*/
+    /*border: 2px solid red;*/
+  }
+
+  .top .blank{
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  .top .blank p{
+    display: inline-block;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+  }
+
+  .top .blank p{
+    margin: 0;
+    padding: 0.75rem 4rem;
+    /*border: 1px solid red;*/
+  }
+
+  .top .blank p{
+    font-size: 1.33rem;
+    /*font-weight: bold;
+    line-height: 1.2;*/
+  }
+
+  footer{
+    margin: 5rem auto 3rem auto;
+    padding: 4rem 7rem;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 972px){
+  .top{
+    height: 17rem;
+    padding: 0;
+    margin: 0rem 0rem 3rem 0rem;
+    /*border: 2px solid blue;*/
+    /*display: flex;*/
+  }
+
+  .navbar{
+    max-width: 100%;                                /*960px-4rem*/
+    margin: 0rem 0rem 9rem 0rem;
+    padding: 1rem 2rem;
+    /*opacity: 0.1;*/
+    /*border: 2px solid red;*/
+  }
+
+  .top .blank{
+    position: static;
+  }
+
+
+  .top .blank p{
+    position: static;
+    display: block;
+  }
+
+  .top .blank p{
+    margin: 0;
+    padding: 1rem;
+    max-width: 100%;
+    /*border: 1px solid red;*/
+  }
+
+  .top .blank p{
+    font-size: 1rem;
+    text-align: center;
+    /*font-weight: bold;
+    line-height: 1.2;*/
+  }
+}
+
+@media only screen and (max-width: 680px){
+  .top{
+    /*height: 17rem;
+    padding: 0;*/
+    margin: 0rem 0rem 3.77rem 0rem;
+    /*border: 2px solid blue;*/
+    /*display: flex;*/
+  }
+
+  .midsection{
+    max-width: 100%;
+    margin: 0rem auto 3.77rem auto;
+    /*padding: 0px;
+    line-height: 1.5;
+    border: 2px solid red;*/
+  }
+
+  .midsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .midsection .icon{
+    margin: 0rem;
+    /*border: 1px solid violet;*/
+  }
+
+  .midsection .middle{
+    /*height: 8rem;*/
+    /*width: 5rem;*/
+    margin: 1.54rem 0rem;
+    /*border: 1px solid blue;*/
+  }
+
+  /*.midsection .icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  .midsection .left img{
+    width: 3.5rem;
+    height: auto;
+  }
+
+  .midsection .middle img, .midsection .right img{
+    width: 88px;
+    height: auto;
+  }*/
+
+  .midsection .column{
+    max-width: 100%;
+    margin: 0rem 0rem 0rem 0rem;
+    /*border: 1px solid green;*/
+  }
+
+  .midsection .first{
+    margin: 0rem 0rem 4rem 0rem;
+  }
+
+  .midsection .column .heading{
+    background-color: cadetblue;
+  }
+
+  .midsection .column .heading{
+    /*margin: 0rem 0rem 1rem 0rem;
+    padding: 0.5rem 1.25rem;*/
+    max-width: 100%;
+  }
+
+  .midsection .column .heading{
+    /*font-size: 1rem;
+    font-weight: bold;
+    color: white;*/
+    text-align: center;
+  }
+
+  footer{
+    /*margin: 5rem auto 0 auto;*/
+    padding: 4rem 0rem;
+    max-width: 100%;
+  }
+
+  footer{
+    /*display: flex;*/
+    justify-content: center;
+    /*align-items: center;*/
+  }
+
+  .midsection .column p{
+    font-size: 0.77rem;
+  }
+
+  .midsection .column p{
+    padding: 0px 5px;
+  }
+
+  footer .tab{
+    display: none;
+  }
+
+  footer{
+    margin: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 665px){
+
+  .top .menu .tab{
+    display: none;
+  }
+
+  .top{
+    height: 17rem;
+    padding: 0;
+    margin: 0rem 0rem 3rem 0rem;
+    /*border: 2px solid blue;*/
+    /*display: flex;*/
+  }
+
+  .navbar{
+    max-width: 100%;                                /*960px-4rem*/
+    margin: 0rem 0rem 9rem 0rem;
+    padding: 1rem 2rem;
+    /*opacity: 0.1;*/
+    /*border: 2px solid red;*/
+  }
+
+  .top .blank{
+    position: static;
+  }
+
+
+  .top .blank p{
+    position: static;
+    display: block;
+  }
+
+  .top .blank p{
+    margin: 0;
+    padding: 1rem;
+    max-width: 100%;
+    /*border: 1px solid red;*/
+  }
+
+  .top .blank p{
+    font-size: 1rem;
+    text-align: center;
+    /*font-weight: bold;
+    line-height: 1.2;*/
+  }
+
+}
+
+@media only screen and (max-width: 430px){
+
+  .top{
+    height: 12rem;
+  }
+
+  .top .navbar .logoandtext span{
+    display: none;
+  }
+
+  footer .mobile{
+    display: none;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .navbar{
+    justify-content: center;
+  }
+  .top .navbar .menu{
+    display: none;
+  }
 }
