@@ -1,4 +1,4 @@
-
+/*Default font-size, line-height and font-family*/
 html{
   font-size: 18px;
   line-height: 1.4;
@@ -8,12 +8,11 @@ body{
   font-family: Helvetica;
 }
 
+/*This styles the section top-hlaf of the page*/
 .top{
   height: 31rem;
   padding: 1rem 0rem 0rem 0rem;
   margin: 0rem 0rem 3rem 0rem;
-  /*border: 2px solid blue;*/
-  /*display: flex;*/
 }
 
 .top{
@@ -23,16 +22,15 @@ body{
   background-position: center;
 }
 
+/*This styles the navigaion bar at the top of the page*/
 .navbar{
   background-color: cadetblue;
 }
 
 .navbar{
-  max-width: 888px;                                /*960px-4rem*/
+  max-width: 888px;                              /*960px-4rem*/
   margin: 0 auto;
   padding: 1rem 2rem;
-  /*opacity: 0.1;*/
-  /*border: 2px solid red;*/
 }
 
 .navbar{
@@ -42,17 +40,18 @@ body{
 }
 
 .navbar{
-  /*font-family: Helvetica;*/
   font-size: 1rem;
   color: white;
 }
 
+/*This styles the adjoining text with the logo*/
 .navbar .logoandtext{
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
+/*This styles the logo image*/
 .top .navbar .logoandtext img{
   margin: 0rem 1rem 0rem 0rem;
   padding: 0;
@@ -60,35 +59,24 @@ body{
   width: auto;
 }
 
-/*.top .navbar .logoandtext img{
-  border: 1px solid yellow;
-}*/
-
-/*.logoandtext, .menu{
-  border: 1px solid brown;
-}*/
-
+/*This styles the menu in navigation bar*/
 .top .navbar .menu span{
   margin: 0rem 0rem 0rem 2rem;
   padding: 0;
 }
 
-/*.top .navbar .logoandtext span{
-  border: 1px solid blue;
-}*/
-
+/*This empty div or container is used as a reference to position the banner text*/
 .top .blank{
   max-width: 960px;
   margin: 0 auto;
-  /*border: 2px solid green;*/
 }
 
 .top .blank{
   position: relative;
 }
 
+/*This is the text on the top image that uses the blank container to position itself.*/
 .top .blank p{
-  /*display: inline-block;*/
   position: absolute;
   top: 10rem;
   right: -2rem;
@@ -101,7 +89,6 @@ body{
 .top .blank p{
   margin: 0;
   padding: 1.5rem 5rem;
-  /*border: 1px solid red;*/
 }
 
 .top .blank p{
@@ -110,13 +97,12 @@ body{
   line-height: 1.2;
 }
 
-
+/*This styles the middle section of the page contianing the icons and the columns of text*/
 .midsection{
   max-width: 1045px;
   margin: 0rem auto 3rem auto;
   padding: 0px;
   line-height: 1.5;
-  /*border: 2px solid red;*/
 }
 
 .midsection{
@@ -124,11 +110,11 @@ body{
   justify-content: center;
 }
 
+/*This styes the icons in the middle of the page, both the icon image and the underlying text*/
 .midsection .icon{
   height: 8rem;
   width: 5rem;
   margin: 0rem 3rem 0rem 3rem;
-  /*border: 1px solid blue;*/
 }
 
 .midsection .icon{
@@ -139,7 +125,8 @@ body{
   text-align: center;
 }
 
-.midsection .left img{
+/*This styles the icon image*/
+.midsection .left img{          /*Only for the left-most image*/
   width: 3.5rem;
   height: auto;
 }
@@ -149,12 +136,13 @@ body{
   height: auto;
 }
 
+/*This styles the text coloumn of the web page*/
 .midsection .column{
   max-width: 35%;
   margin: 0% 2.5% 0% 2.5%;
-  /*border: 1px solid green;*/
 }
 
+/*This styles the heading of the columns*/
 .midsection .column .heading{
   background-color: cadetblue;
 }
@@ -171,10 +159,10 @@ body{
   color: white;
 }
 
+/*This styles the footer of the web-page*/
 footer{
   background-color: azure;
 }
-
 
 footer{
   margin: 5rem auto 0 auto;
@@ -188,45 +176,36 @@ footer{
   align-items: center;
 }
 
-
 footer img{
   height: 1.5rem;
   width: auto;
   margin: 0rem 1rem 0rem 0rem;
 }
 
+/*This styles the word menu and copyright in footer on screen having width more that 666px*/
 @media only screen and (min-width: 666px){
   .top .menu .mobile{
     display: none;
   }
-
-  footer .mobile{
-    display: none;
-  }
 }
 
+/*This displayed the desired text in footer till the screen width increases to more than 680px*/
+@media only screen and (min-width: 680px){
+    footer .mobile{
+      display: none;
+    }
+}
+
+/*This styles the page for the screen below 1053px also known as tabs*/
 @media only screen and (max-width: 1053px){
   .top{
     height: 22rem;
     padding: 0;
-    margin: 0rem 0rem 3rem 0rem;
-    /*border: 2px solid blue;*/
-    /*display: flex;*/
-  }
-
-  .top{
-    background-image: url(../images/glasses-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
   }
 
   .navbar{
-    max-width: 100%;                                /*960px-4rem*/
+    max-width: 100%;
     margin: 0;
-    padding: 1rem 2rem;
-    /*opacity: 0.1;*/
-    /*border: 2px solid red;*/
   }
 
   .top .blank{
@@ -235,8 +214,6 @@ footer img{
   }
 
   .top .blank p{
-    display: inline-block;
-    position: absolute;
     top: 5rem;
     right: 2rem;
   }
@@ -244,13 +221,10 @@ footer img{
   .top .blank p{
     margin: 0;
     padding: 0.75rem 4rem;
-    /*border: 1px solid red;*/
   }
 
   .top .blank p{
     font-size: 1.33rem;
-    /*font-weight: bold;
-    line-height: 1.2;*/
   }
 
   footer{
@@ -260,65 +234,48 @@ footer img{
   }
 }
 
+/*This styles the screen with width less than 972px*/
 @media only screen and (max-width: 972px){
   .top{
     height: 17rem;
-    padding: 0;
-    margin: 0rem 0rem 3rem 0rem;
-    /*border: 2px solid blue;*/
-    /*display: flex;*/
   }
 
   .navbar{
-    max-width: 100%;                                /*960px-4rem*/
+    max-width: 100%;
     margin: 0rem 0rem 9rem 0rem;
-    padding: 1rem 2rem;
-    /*opacity: 0.1;*/
-    /*border: 2px solid red;*/
   }
 
   .top .blank{
     position: static;
   }
 
-
+/*Since the banner text is no more require negative offset or margin*/
   .top .blank p{
     position: static;
-    display: block;
   }
 
   .top .blank p{
-    margin: 0;
     padding: 1rem;
     max-width: 100%;
-    /*border: 1px solid red;*/
   }
 
   .top .blank p{
     font-size: 1rem;
     text-align: center;
-    /*font-weight: bold;
-    line-height: 1.2;*/
   }
 }
 
-@media only screen and (max-width: 680px){
+/*For styles on screen size less than 679px*/
+@media only screen and (max-width: 679px){
   .top{
-    /*height: 17rem;
-    padding: 0;*/
     margin: 0rem 0rem 3.77rem 0rem;
-    /*border: 2px solid blue;*/
-    /*display: flex;*/
   }
 
   .midsection{
     max-width: 100%;
     margin: 0rem auto 3.77rem auto;
-    /*padding: 0px;
-    line-height: 1.5;
-    border: 2px solid red;*/
   }
-
+/*This makes the icon and the coloumn appear vertically one on top of the other*/
   .midsection{
     display: flex;
     flex-direction: column;
@@ -327,40 +284,17 @@ footer img{
   }
   .midsection .icon{
     margin: 0rem;
-    /*border: 1px solid violet;*/
   }
 
   .midsection .middle{
-    /*height: 8rem;*/
-    /*width: 5rem;*/
     margin: 1.54rem 0rem;
-    /*border: 1px solid blue;*/
   }
-
-  /*.midsection .icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-  }
-
-  .midsection .left img{
-    width: 3.5rem;
-    height: auto;
-  }
-
-  .midsection .middle img, .midsection .right img{
-    width: 88px;
-    height: auto;
-  }*/
 
   .midsection .column{
     max-width: 100%;
     margin: 0rem 0rem 0rem 0rem;
-    /*border: 1px solid green;*/
   }
-
+/*This margin sepeatate the two text section*/
   .midsection .first{
     margin: 0rem 0rem 4rem 0rem;
   }
@@ -370,28 +304,11 @@ footer img{
   }
 
   .midsection .column .heading{
-    /*margin: 0rem 0rem 1rem 0rem;
-    padding: 0.5rem 1.25rem;*/
     max-width: 100%;
   }
 
   .midsection .column .heading{
-    /*font-size: 1rem;
-    font-weight: bold;
-    color: white;*/
     text-align: center;
-  }
-
-  footer{
-    /*margin: 5rem auto 0 auto;*/
-    padding: 4rem 0rem;
-    max-width: 100%;
-  }
-
-  footer{
-    /*display: flex;*/
-    justify-content: center;
-    /*align-items: center;*/
   }
 
   .midsection .column p{
@@ -402,16 +319,26 @@ footer img{
     padding: 0px 5px;
   }
 
-  footer .tab{
-    display: none;
+  footer{
+    padding: 4rem 0rem;
+    max-width: 100%;
+  }
+
+  footer{
+    justify-content: center;
   }
 
   footer{
     margin: 0rem;
   }
+/*This hides the text in the footer so that the mobile version only gets diplayed*/
+  footer .tab{
+    display: none;
+  }
 
 }
 
+/*This syles the changes in webpage when the screen width is less than 665px*/
 @media only screen and (max-width: 665px){
 
   .top .menu .tab{
@@ -422,16 +349,12 @@ footer img{
     height: 17rem;
     padding: 0;
     margin: 0rem 0rem 3rem 0rem;
-    /*border: 2px solid blue;*/
-    /*display: flex;*/
   }
 
   .navbar{
-    max-width: 100%;                                /*960px-4rem*/
+    max-width: 100%;
     margin: 0rem 0rem 9rem 0rem;
     padding: 1rem 2rem;
-    /*opacity: 0.1;*/
-    /*border: 2px solid red;*/
   }
 
   .top .blank{
@@ -448,18 +371,16 @@ footer img{
     margin: 0;
     padding: 1rem;
     max-width: 100%;
-    /*border: 1px solid red;*/
   }
 
   .top .blank p{
     font-size: 1rem;
     text-align: center;
-    /*font-weight: bold;
-    line-height: 1.2;*/
   }
 
 }
 
+/*This makes the changes in style when the screen width is less than 430px*/
 @media only screen and (max-width: 430px){
 
   .top{
@@ -479,7 +400,8 @@ footer img{
   }
 }
 
-@media only screen and (max-width:325px){
+/*This makes the changes in style when the screen width is less than */
+@media only screen and (max-width:340px){
   .navbar{
     justify-content: center;
   }
